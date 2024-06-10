@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "AmorTron",
+			"path": "../../../PlatformIO/Projects/AmorTron"
+		},
+		{
+			"name": "AmorTron",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
