@@ -9,11 +9,10 @@ Código do AmorTron: */
 #include <Servo.h>
 #include <Arduino.h>
 #include <LiquidCrystal.h>
+#include "include/config.hpp"
  
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2); //Define os pinos que serão utilizados para ligação ao display
-Servo meuServo; // Cria um objeto de servo
 bool carregando = true;
-int pos;
 
 void setup() {
   meuServo.attach(9); // Define o pino ao qual o servo está conectado
