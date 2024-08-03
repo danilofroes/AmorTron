@@ -7,3 +7,7 @@ Arquivo para pinagem de componentes
 #include <LiquidCrystal.h>
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+int pinServo = 9;
+Servo meuServo;
+int pos;
+bool carregando = true;

@@ -10,13 +10,10 @@ Código do AmorTron: */
 #include <Arduino.h>
 #include <LiquidCrystal.h>
 #include "config.hpp"
- 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2); //Define os pinos que serão utilizados para ligação ao display
-bool carregando = true;
-Servo meuServo;
+#include "pinagem.hpp"
 
 void setup() {
-  meuServo.attach(9); // Define o pino ao qual o servo está conectado
+  meuServo.attach(pinServo); // Define o pino ao qual o servo está conectado
   meuServo.write(0);
   lcd.begin(16, 2); //Define o tamanho do LCD (16 colunas e 2 linhas)
 
@@ -24,17 +21,9 @@ void setup() {
 
 void loop() {
     
-    //Fazer o servo girar 
-    for (int pos = 0; pos <= 180; pos++) {
-    meuServo.write(pos);
-    delay(10); //Velocidade do servo
-    }
-    for (int pos = 180; pos >= 0; pos--) {
-    meuServo.write(pos);
-    delay(10); //Velocidade do servo
-    }
+    servo();
 
-      //Mensagem de carregando ao iniciar
+    //Mensagem de carregando ao iniciar
     if (carregando) {
     lcd.clear();
     lcd.setCursor(0, 0);
