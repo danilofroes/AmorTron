@@ -9,16 +9,20 @@ Local onde fica a parte principal do código
 #include "functions.hpp"
 
 void setup() {
-  meuServo.attach(pinServo);    // Define o pino ao qual o servo está conectado
+  meuServo.attach(PINO_SERVO);    // Define o pino ao qual o servo está conectado
   meuServo.write(0);            // Define a posição inicial do servo como 0
   lcd.begin(16, 2);             // Define o tamanho do LCD (16 colunas e 2 linhas)
-  pinMode(pinBuzzer, OUTPUT);   // Define o pino do buzzer como saída
+  pinMode(PINO_BUZZER, OUTPUT);   // Define o pino do buzzer como saída
 
 }
 
 void loop() {
     
-  servo();
+  #if defined ServoMotor
+  
+    servo();
+
+  #endif
 
   //Mensagem de carregando ao iniciar
   if (carregando) {

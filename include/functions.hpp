@@ -2,6 +2,8 @@
 Arquivo para as funções de cada componente usado na main
 */
 
+#pragma once
+
 #include <Servo.h>
 #include <Arduino.h>
 #include <LiquidCrystal.h>
