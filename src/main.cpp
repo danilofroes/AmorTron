@@ -27,12 +27,7 @@ void loop() {
   //Mensagem de carregando ao iniciar
   if (carregando) {
 
-    lcd.clear();                     // Limpa a tela do LCD
-    lcd.setCursor(0, 0);             // Define a posição da mensagem
-    lcd.print("Carregando...");      // Printa a mensagem de carregando
-    delay(6000);                     // Aguarda 6s
-
-    carregando = false;
+    mensagemCarregando();
       
   }
 

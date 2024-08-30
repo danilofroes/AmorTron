@@ -64,6 +64,19 @@ void mensagemLcd(const char* mensagem1, const char* mensagem2) {
 }
 
 /**
+ * @brief Função para mostrar mensagem de carregando no LCD
+ */
+void mensagemCarregando() {
+
+    lcd.clear();                     // Limpa a tela do LCD
+    lcd.setCursor(0, 0);             // Define a posição da mensagem
+    lcd.print("Carregando...");      // Printa a mensagem de carregando
+    delay(6000);                     // Aguarda 6s
+
+    carregando = false;              // Após mostrar a mensagem irá declarar carregando como falso para não se repetir mais
+}
+
+/**
 * @brief Função que manda o som que o buzzer deve emitir
 */
 void buzzer() {
