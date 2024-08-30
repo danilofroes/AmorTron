@@ -18,7 +18,7 @@ void setup() {
 
 void loop() {
     
-  #if defined ServoMotor
+  #if defined SERVO_MOTOR
   
     servo();
 

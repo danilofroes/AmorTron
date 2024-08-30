@@ -14,8 +14,6 @@ Arquivo para as funções de cada componente usado na main
 */
 void servo() {
 
-    int pos;
-
     //Faz o servo girar de 0° para 180° 
     for (int pos = 0; pos <= 180; pos++) {
     meuServo.write(pos);

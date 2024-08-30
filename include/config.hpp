@@ -23,3 +23,4 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);    //Classe para definir a pinagem do LCD
 
 Servo meuServo;
 bool carregando = true;
+int pos;
