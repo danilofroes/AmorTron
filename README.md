@@ -25,7 +25,7 @@ O projeto utiliza os seguintes componentes eletrônicos:
 - **LED**
 - **Resistores**
 
-![Circuito AmorTron](https://hackmd.io/_uploads/B122620iC.png)
+![image](https://github.com/user-attachments/assets/ddcbb8db-a9f7-44e4-bcd0-861110f1c68e)
 
 > *Nota:* Na simulação do circuito, foi usado um buzzer ativo em vez de um buzzer passivo devido à disponibilidade no software. O buzzer passivo deveria estar conectado diretamente à placa do Arduino. Além disso, se um servo motor for utilizado, o pino de lógica deve ser conectado ao Arduino.
 
