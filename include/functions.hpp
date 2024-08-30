@@ -77,10 +77,42 @@ void mensagemCarregando() {
 }
 
 /**
+ * @brief Função para emitir uma nota no buzzer
+ * 
+ * @param frequencia A frequência em Hz da nota que será emitido
+ * @param duracao O tempo que a nota será emitida
+ */
+void playTone(int frequencia, int duracao) {
+  tone(PINO_BUZZER, frequencia, duracao);
+  delay(duracao);
+  noTone(PINO_BUZZER); // Para o som entre as notas
+}
+
+/**
 * @brief Função que manda o som que o buzzer deve emitir
 */
-void buzzer() {
-/**
- * @todo Implementar função para lógica do buzzer
- */
+void buzzer(const char* musica) {
+
+    // Frequência das notas em Hz
+    const int NOTA_E4 = 329;
+    const int NOTA_G4 = 392;
+    const int NOTA_A4 = 440;
+    const int NOTA_B4 = 493;
+
+    const int QUARTO_NOTA = 500; // 1/4 de uma nota
+    const int MEIA_NOTA = 1000;   // 1/2 de uma nota
+
+    if (musica == "Iris") {
+
+        playTone(NOTA_E4, QUARTO_NOTA);
+        playTone(NOTA_G4, QUARTO_NOTA);
+        playTone(NOTA_A4, QUARTO_NOTA);
+        playTone(NOTA_B4, MEIA_NOTA);
+        playTone(NOTA_A4, QUARTO_NOTA);
+        playTone(NOTA_G4, QUARTO_NOTA);
+        playTone(NOTA_E4, MEIA_NOTA);
+
+        delay(2000);
+    }
+
 }
