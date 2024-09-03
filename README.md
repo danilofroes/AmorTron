@@ -1,7 +1,7 @@
 <h1 align="center">AmorTron 🎵</h1>
 
 <div align="center">
-    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM ATUALIZAÇÃO&color=GREEN&style=for-the-badge" alt="Status: Em Atualização"/>
+    <img src="https://img.shields.io/badge/STATUS-EM_ATUALIZA%C3%87%C3%83O-green" alt="Status: Em Atualização"/>
     <br>
     <a href="https://www.linkedin.com/in/danilodavi/">
         <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
