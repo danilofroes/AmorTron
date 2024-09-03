@@ -10,8 +10,7 @@
 
 ## 📖 Sobre o Projeto
 
-**AmorTron** é uma caixinha de música eletrônica personalizada, desenvolvida com Arduino. O projeto começou como um presente para alguém especial e evoluiu para um desafio técnico mais avançado, incorporando diversos componentes eletrônicos.
-
+**AmorTron** é uma caixinha de música eletrônica autoral, que combina tecnologia e romantismo. Projetada com um Arduino, ela permite a reprodução de melodias personalizadas, utilizando um buzzer, um LCD e um motor para criar uma experiência interativa e envolvente. Este projeto é ideal para quem deseja explorar a interseção entre eletrônica e criatividade, seja para presentear alguém especial ou simplesmente experimentar com novas ideias.
 ## ⚙️ Eletrônica
 
 O projeto utiliza os seguintes componentes eletrônicos:
