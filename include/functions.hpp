@@ -4,28 +4,24 @@ Arquivo para as funções de cada componente usado na main
 
 #pragma once
 
-#include <Servo.h>
-#include <Arduino.h>
-#include <LiquidCrystal.h>
-#include "config.hpp"
+#ifdef SERVO_MOTOR
+    /**
+    * @brief Função para fazer o servo girar do 0° para 180° e depois voltar para 0°
+    */
+    void servo() {
 
-/**
-* @brief Função para fazer o servo girar do 0° para 180° e depois voltar para 0°
-*/
-void servo() {
-
-    //Faz o servo girar de 0° para 180° 
-    for (int pos = 0; pos <= 180; pos++) {
-    meuServo.write(pos);
-    delay(10); //Velocidade do servo
+        //Faz o servo girar de 0° para 180° 
+        for (int pos = 0; pos <= 180; pos++) {
+            meuServo.write(pos);
+            delay(10); //Velocidade do servo
+        }
+        //Faz o servo girar de 180° para 0° 
+        for (int pos = 180; pos >= 0; pos--) {
+            meuServo.write(pos);
+            delay(10); //Velocidade do servo
+        }
     }
-    //Faz o servo girar de 180° para 0° 
-    for (int pos = 180; pos >= 0; pos--) {
-    meuServo.write(pos);
-    delay(10); //Velocidade do servo
-    }
-
-}
+#endif
 
 /**
 * @brief Função para imprimir mensagens no LCD
@@ -83,9 +79,9 @@ void mensagemCarregando() {
  * @param duracao O tempo que a nota será emitida
  */
 void playTone(int frequencia, int duracao) {
-  tone(PINO_BUZZER, frequencia, duracao);
-  delay(duracao);
-  noTone(PINO_BUZZER); // Para o som entre as notas
+    tone(PINO_BUZZER, frequencia, duracao);
+    delay(duracao);
+    noTone(PINO_BUZZER); // Para o som entre as notas
 }
 
 /**
