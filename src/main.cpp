@@ -2,9 +2,11 @@
 Local onde fica a parte principal do código
 */
 
-#include <Servo.h>
 #include <Arduino.h>
+#include <string.h>
+#include <Wire.h>
 #include <LiquidCrystal.h>
+#include <Servo.h>
 #include "config.hpp"
 #include "functions.hpp"
 

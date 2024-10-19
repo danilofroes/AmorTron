@@ -98,7 +98,7 @@ void buzzer(const char* musica) {
     const int QUARTO_NOTA = 500; // 1/4 de uma nota
     const int MEIA_NOTA = 1000;   // 1/2 de uma nota
 
-    if (musica == "Iris") {
+    if (strcmp(musica, "Iris") == 0) {
 
         playTone(NOTA_E4, QUARTO_NOTA);
         playTone(NOTA_G4, QUARTO_NOTA);
