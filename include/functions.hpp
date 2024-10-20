@@ -50,12 +50,12 @@ void mensagemLcd(const char* mensagem1, const char* mensagem2) {
 
     }
 
-    lcd.clear();
-    lcd.setCursor(posMensagem1, primeiraLinha);
-    lcd.print(mensagem1);
-    lcd.setCursor(posMensagem2,segundaLinha);
-    lcd.print(mensagem2);
-    delay(5000);
+    lcd.clear();                                    // Limpa a tela do LCD
+    lcd.setCursor(posMensagem1, primeiraLinha);     // Define a posição da mensagem 1
+    lcd.print(mensagem1);                           // Printa a mensagem 1
+    lcd.setCursor(posMensagem2,segundaLinha);       // Define a posição da mensagem 2
+    lcd.print(mensagem2);                           // Printa a mensagem 2
+    delay(5000);                                    // Delay de 5s entre mensagens
 
 }
 
@@ -86,6 +86,8 @@ void playTone(int frequencia, int duracao) {
 
 /**
 * @brief Função que manda o som que o buzzer deve emitir
+*
+* @param musica Define qual música será tocada
 */
 void buzzer(const char* musica) {
 

@@ -25,7 +25,7 @@ void setup() {
 void loop() {
     
   #ifdef SERVO_MOTOR
-    servo();
+    servo();  // Chama a função para o servo girar
   #endif
 
   //Mensagem de carregando ao iniciar
