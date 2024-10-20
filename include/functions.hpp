@@ -89,15 +89,6 @@ void playTone(int frequencia, int duracao) {
 */
 void buzzer(const char* musica) {
 
-    // Frequência das notas em Hz
-    const int NOTA_E4 = 329;
-    const int NOTA_G4 = 392;
-    const int NOTA_A4 = 440;
-    const int NOTA_B4 = 493;
-
-    const int QUARTO_NOTA = 500; // 1/4 de uma nota
-    const int MEIA_NOTA = 1000;   // 1/2 de uma nota
-
     if (strcmp(musica, "Iris") == 0) {
 
         playTone(NOTA_E4, QUARTO_NOTA);
