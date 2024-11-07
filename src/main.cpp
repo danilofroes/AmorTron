@@ -35,12 +35,14 @@ void loop() {
 
   //Loop das outras mensagens 
   else {
-    mensagemLcd("Ola, minha", "princesa");
-    mensagemLcd("Feliz","aniversario!");
-    mensagemLcd("Lembre sempre q", "eu te amo mt <3");
-    mensagemLcd("Você eh o amor", "da minha vida");
-    mensagemLcd("Tenho muito", "orgulho de voce");
-    mensagemLcd("cause i love", "u so much");
+    mensagemLcd("If you go, I'm", "going too");
+    mensagemLcd("'Cause it was", "always you, uh");
+    mensagemLcd("And if I'm", "turning blue,");
+    mensagemLcd("please, don't", "save me");
+    mensagemLcd("Nothing left to", "lose without my");
+    mensagemLcd("baby");
+    mensagemLcd("Birds of a", "feather");
+    mensagemLcd("We go", "together");
   }
 
 }
