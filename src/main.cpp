@@ -40,7 +40,7 @@ void loop() {
     mensagemLcd("And if I'm", "turning blue,");
     mensagemLcd("please, don't", "save me");
     mensagemLcd("Nothing left to", "lose without my");
-    mensagemLcd("baby");
+    mensagemLcd("baby","");
     mensagemLcd("Birds of a", "feather");
     mensagemLcd("We go", "together");
   }
