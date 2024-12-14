@@ -35,6 +35,10 @@ void loop() {
 
   //Loop das outras mensagens 
   else {
+    /*
+    Para adicionar uma mensagem só chamar a função mensagemLcd com a mensagem desejada, sendo o primeiro parâmetro a primeira linha do LCD e o segundo parâmetro a segunda linha.
+    Importante: O LCD tem 16 colunas e 2 linhas, então se a mensagem for maior que 16 caracteres, ela será cortada.
+    */
     mensagemLcd("If you go, I'm", "going too");
     mensagemLcd("'Cause it was", "always you, uh");
     mensagemLcd("And if I'm", "turning blue,");

@@ -43,10 +43,10 @@ void mensagemLcd(const char* mensagem1, const char* mensagem2) {
 
     if (caracteresMensagem1 > 16 || caracteresMensagem2 > 16) {
         
-        String(mensagem1);      // transforma o const char* em string
+        String(mensagem1);              // transforma o const char* em string
         String(mensagem2);
-        mensagem1.remove(16);   // limita a mensagem em 16 caracteres
-        mensagem2.remove(16);
+        mensagem1.remove(tamanhoLinha); // limita a mensagem em 16 caracteres
+        mensagem2.remove(tamanhoLinha);
 
     }
 
@@ -55,7 +55,7 @@ void mensagemLcd(const char* mensagem1, const char* mensagem2) {
     lcd.print(mensagem1);                           // Printa a mensagem 1
     lcd.setCursor(posMensagem2,segundaLinha);       // Define a posição da mensagem 2
     lcd.print(mensagem2);                           // Printa a mensagem 2
-    delay(5000);                                    // Delay de 5s entre mensagens
+    delay(delayMensagem);                           // Delay entre mensagens
 
 }
 
