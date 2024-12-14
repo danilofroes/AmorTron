@@ -6,7 +6,9 @@ Local onde fica a parte principal do código
 #include <string.h>
 #include <Wire.h>
 #include <LiquidCrystal.h>
-#include <Servo.h>
+#ifdef SERVO_MOTOR
+  #include <Servo.h>
+#endif
 #include "config.hpp"
 #include "functions.hpp"
 
